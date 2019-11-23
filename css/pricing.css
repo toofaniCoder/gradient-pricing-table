@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+width: 100%;
+}
+
+.pricing-wrapper{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    min-height: 610px;
+    padding: 0px 120px;
+    background-color: #f1f1f1;
+
+}
+
+.pricing {
+    padding: 40px;
+    color: #fff;
+    background-color: #fff;
+    background-blend-mode: multiply;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+
+.pricing-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.pricing-body {
+    font-size: 18px;
+    font-weight: 300;
+    list-style-type: none;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+.pricing-body li>span {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.pricing-btn {
+    font-weight: 700;
+    display: block;
+    border-radius: 27px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 50px;
+    transition: 0.4s;
+}
+.pricing-btn:hover {
+    transform: scale(1.04, 1.04);
+    box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pricing.basic {
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%), url("../img/bg.png");   
+
+}
+
+.pricing.pro {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%), url("../img/bg.png");
+    
+}
+
+.pricing.plus {
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%), url("../img/bg.png");
+    
+}
+
+@media screen and (max-width: 600px) {
+    .pricing-wrapper{
+        grid-template-columns: 300px;
+        grid-row-gap: 30px;
+        padding: 50px 70px;
+    }
+}
